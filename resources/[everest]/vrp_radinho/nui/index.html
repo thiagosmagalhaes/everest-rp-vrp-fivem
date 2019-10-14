@@ -1,0 +1,80 @@
+<html>
+
+<head>
+	<style>
+		.tokovoipInfoConnect {
+			position: fixed;
+			top: 15px;
+			left: 15px;
+			list-style-type: none;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.tokovoipInfoConnect li {
+			display: flex;
+			vertical-align: middle;
+			font-family: Arial;
+			font-size: 11px;
+			font-weight: bold;
+			line-height: 17px;
+			background: #ffffffc5;
+			padding: 5px;
+			border-radius: 8px;
+			margin-bottom: 5px;
+		}
+
+		.tokovoipInfoConnect img {
+			border-radius: 25px;
+			height: 15px;
+			width: 15px;
+			margin-right: 5px;
+		}
+	</style>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+	<ul id="tokovoipInfoConnect" class="tokovoipInfoConnect">
+
+	</ul>
+
+	<script>
+		window.addEventListener('message', function (event) {
+			if (event.data.type === "sendMessage") {
+				var id = Math.floor((Math.random() * 1000000) + 1);
+				$(".tokovoipInfoConnect").append('<li id="alert_' + id + '"><img src="speaker.gif" /> ' + event.data.msg + '</li>');
+				setTimeout(function () {
+					$(".tokovoipInfoConnect li#alert_" + id).fadeOut(function () {
+						$(this).remove();
+					});
+				}, 3000);
+
+				if ($(".tokovoipInfoConnect li").length > 5) {
+					$(".tokovoipInfoConnect li:first").fadeOut(function () {
+						$(this).remove();
+					});
+				}
+			}
+
+			if (event.data.type === "keyRadio") {
+				var id = event.data.id;
+				if (event.data.show) {
+					if ($(".tokovoipInfoConnect li#alert_" + id)) {
+						$(".tokovoipInfoConnect li#alert_" + id).fadeOut(function () {
+							$(this).remove();
+						});
+					}
+					$(".tokovoipInfoConnect").append('<li id="alert_' + id + '"><img src="speaker.gif" /> ' + event.data.msg + '</li>');
+				} else {
+					$(".tokovoipInfoConnect li#alert_" + id).fadeOut(function () {
+						$(this).remove();
+					});
+				}
+			}
+		});
+	</script>
+</body>
+
+</html>

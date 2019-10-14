@@ -1,0 +1,151 @@
+<html>
+
+<head>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<link href="ui.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="actionmenu">
+		<div id="mainmenu">
+			<button class="menuoption" data-sub="utilidades">Utilidades</button>
+			<button class="menuoption" data-sub="vestuario">Vestuário</button>
+			<button class="menuoption" data-sub="bebidas">Bebidas</button>
+			<button class="menuoption" data-action="fechar">Fechar</button>
+		</div>
+
+		<div data-parent="mainmenu" id="utilidades" style="display: none;">
+			<button class="menuoption" data-sub="utilidades-comprar">Comprar</button>
+			<button class="menuoption" data-sub="utilidades-vender">Vender</button>
+		</div>
+		<div data-parent="utilidades" id="utilidades-comprar" style="display: none;">
+			<button class="menuoption" data-action="utilidades-comprar-isca">
+				<l>Isca</l>
+				<r>$500</r>
+			</button>
+			<button class="menuoption" data-action="utilidades-comprar-garrafa">
+				<l>Garrafa Vazia</l>
+				<r>$15</r>
+			</button>
+			<button class="menuoption" data-action="utilidades-comprar-ferramentas">
+				<l>Ferramentas</l>
+				<r>$20</r>
+			</button>
+			<button class="menuoption" data-action="utilidades-comprar-celular">
+				<l>Celular</l>
+				<r>$1500.00</r>
+			</button>
+		</div>
+		<div data-parent="utilidades" id="utilidades-vender" style="display: none;">
+			<button class="menuoption" data-action="utilidades-vender-isca">
+				<l>Isca</l>
+				<r>$250</r>
+			</button>
+			<button class="menuoption" data-action="utilidades-vender-garrafa">
+				<l>Garrafa Vazia</l>
+				<r>$7</r>
+			</button>
+			<button class="menuoption" data-action="utilidades-vender-ferramentas">
+				<l>Ferramentas</l>
+				<r>$10</r>
+			</button>
+			<button class="menuoption" data-action="utilidades-vender-celular">
+				<l>Celular</l>
+				<r>$500</r>
+			</button>
+		</div>
+
+		<div data-parent="mainmenu" id="vestuario" style="display: none;">
+			<button class="menuoption" data-sub="vestuario-comprar">Comprar</button>
+			<button class="menuoption" data-sub="vestuario-vender">Vender</button>
+		</div>
+		<div data-parent="vestuario" id="vestuario-comprar" style="display: none;">
+			<button class="menuoption" data-action="vestuario-comprar-mochila">
+				<l>Mochila</l>
+				<r>$10.000</r>
+			</button>
+			<button class="menuoption" data-action="vestuario-comprar-alianca">
+				<l>Aliança</l>
+				<r>$300</r>
+			</button>
+		</div>
+		<div data-parent="vestuario" id="vestuario-vender" style="display: none;">
+			<button class="menuoption" data-action="vestuario-vender-mochila">
+				<l>Mochila</l>
+				<r>$5.000</r>
+			</button>
+			<button class="menuoption" data-action="vestuario-vender-alianca">
+				<l>Aliança</l>
+				<r>$150</r>
+			</button>
+		</div>
+
+		<div data-parent="mainmenu" id="bebidas" style="display: none;">
+			<button class="menuoption" data-sub="bebidas-comprar">Comprar</button>
+			<button class="menuoption" data-sub="bebidas-vender">Vender</button>
+		</div>
+		<div data-parent="bebidas" id="bebidas-comprar" style="display: none;">
+			<button class="menuoption" data-action="bebidas-comprar-cerveja">
+				<l>Cerveja</l>
+				<r>$18</r>
+			</button>
+			<button class="menuoption" data-action="bebidas-comprar-tequila">
+				<l>Tequila</l>
+				<r>$30</r>
+			</button>
+			<button class="menuoption" data-action="bebidas-comprar-vodka">
+				<l>Vodka</l>
+				<r>$48</r>
+			</button>
+			<button class="menuoption" data-action="bebidas-comprar-whisky">
+				<l>Whisky</l>
+				<r>$60</r>
+			</button>
+			<button class="menuoption" data-action="bebidas-comprar-conhaque">
+				<l>Conhaque</l>
+				<r>$72</r>
+			</button>
+			<button class="menuoption" data-action="bebidas-comprar-absinto">
+				<l>Absinto</l>
+				<r>$90</r>
+			</button>
+			<button class="menuoption" data-action="bebidas-comprar-energetico">
+				<l>Energético</l>
+				<r>$150</r>
+			</button>
+		</div>
+		<div data-parent="bebidas" id="bebidas-vender" style="display: none;">
+			<button class="menuoption" data-action="bebidas-vender-cerveja">
+				<l>Cerveja</l>
+				<r>$9</r>
+			</button>
+			<button class="menuoption" data-action="bebidas-vender-tequila">
+				<l>Tequila</l>
+				<r>$15</r>
+			</button>
+			<button class="menuoption" data-action="bebidas-vender-vodka">
+				<l>Vodka</l>
+				<r>$24</r>
+			</button>
+			<button class="menuoption" data-action="bebidas-vender-whisky">
+				<l>Whisky</l>
+				<r>$30</r>
+			</button>
+			<button class="menuoption" data-action="bebidas-vender-conhaque">
+				<l>Conhaque</l>
+				<r>$36</r>
+			</button>
+			<button class="menuoption" data-action="bebidas-vender-absinto">
+				<l>Absinto</l>
+				<r>$45</r>
+			</button>
+			<button class="menuoption" data-action="bebidas-vender-energetico">
+				<l>Energético</l>
+				<r>$75</r>
+			</button>
+		</div>
+	</div>
+	<script src="ui.js" type="text/javascript"></script>
+</body>
+
+</html>

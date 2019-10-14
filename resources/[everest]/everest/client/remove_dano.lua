@@ -1,0 +1,16 @@
+Citizen.CreateThread(function()
+    local ped = PlayerPedId()
+    local pedId = PlayerId()
+    while true do
+        Citizen.Wait(1)
+        N_0x4757f00bc6323cfe(GetHashKey("WEAPON_SNOWBALL"), 0.00)
+        N_0x4757f00bc6323cfe(GetHashKey("WEAPON_SMOKEGRENADE"), 0.01)
+        N_0x4757f00bc6323cfe(GetHashKey("WEAPON_RAYPISTOL"), 0.01)
+        N_0x4757f00bc6323cfe(GetHashKey("WEAPON_NIGHTSTICK"), 0.01)
+        N_0x4757f00bc6323cfe(GetHashKey("weapon_knuckle"), 0.01)
+        N_0x4757f00bc6323cfe(GetHashKey("WEAPON_BAT"), 0.01)
+        N_0x4757f00bc6323cfe(GetHashKey("WEAPON_UNARMED"), 0.40)
+        N_0x4757f00bc6323cfe(GetHashKey("WEAPON_MOLOTOV"), 0.01)
+        N_0x4757f00bc6323cfe(GetHashKey("WEAPON_BZGAS"), 0.20)
+    end
+end)

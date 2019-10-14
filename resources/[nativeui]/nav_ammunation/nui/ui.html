@@ -1,0 +1,267 @@
+<html>
+
+<head>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<link href="ui.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="actionmenu">
+		<div id="mainmenu">
+			<button class="menuoption" data-sub="armamentos">Armamentos</button>
+			<button class="menuoption" data-sub="municoes">Munições</button>
+
+			<button class="menuoption" data-sub="utilidades">Utilidades</button>
+			<button class="menuoption" data-action="fechar">Fechar</button>
+		</div>
+
+		<div data-parent="mainmenu" id="armamentos" style="display: none;">
+
+			<button class="menuoption" data-sub="armamentos-fogo">Arma de Fogo</button>
+			<button class="menuoption" data-sub="armamentos-branca">Arma Branca</button>
+
+		</div>
+
+
+		<div data-parent="armamentos" id="armamentos-fogo" style="display: none;">
+			<button class="menuoption" data-sub="armamentos-fogo-comprar">Comprar</button>
+			<button class="menuoption" data-sub="armamentos-fogo-vender">Vender</button>
+		</div>
+
+		<div data-parent="armamentos-fogo" id="armamentos-fogo-comprar" style="display: none;">
+			<!-- <button class="menuoption" data-action="armamentos-comprar-m1922"><l>M1922</l><r>$25.000</r></button> -->
+			<!-- <button class="menuoption" data-action="armamentos-comprar-m1911"><l>M1911</l><r>$30.000</r></button> -->
+			<!-- <button class="menuoption" data-action="armamentos-comprar-fnfiveseven"><l>FN Five Seven</l><r>$35.000</r></button> -->
+			<button class="menuoption" data-action="armamentos-comprar-winchester22">
+				<l>Winchester 22</l>
+				<r>$50.000</r>
+			</button>
+
+		</div>
+		<div data-parent="armamentos-fogo" id="armamentos-fogo-vender" style="display: none;">
+			<!-- <button class="menuoption" data-action="armamentos-vender-m1922"><l>M1922</l><r>$12.500</r></button> -->
+			<!-- <button class="menuoption" data-action="armamentos-vender-m1911"><l>M1911</l><r>$15.000</r></button> -->
+			<!-- <button class="menuoption" data-action="armamentos-vender-fnfiveseven"><l>FN Five Seven</l><r>$17.500</r></button> -->
+			<button class="menuoption" data-action="armamentos-vender-winchester22">
+				<l>Winchester 22</l>
+				<r>$25.000</r>
+			</button>
+			<!-- <button class="menuoption" data-action="armamentos-vender-sinalizador"><l>Sinalizador</l><r>$500</r></button> -->
+		</div>
+
+
+		<div data-parent="armamentos" id="armamentos-branca" style="display: none;">
+			<button class="menuoption" data-sub="armamentos-branca-comprar">Comprar</button>
+			<button class="menuoption" data-sub="armamentos-branca-vender">Vender</button>
+		</div>
+		<div data-parent="armamentos-branca" id="armamentos-branca-comprar" style="display: none;">
+			<button class="menuoption" data-action="armamentos-comprar-faca">
+				<l>Faca</l>
+				<r>$3.150</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-comprar-adaga">
+				<l>Adaga</l>
+				<r>$3.300</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-comprar-ingles">
+				<l>Soco-Inglês</l>
+				<r>$3.500</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-comprar-machete">
+				<l>Machete</l>
+				<r>$3.700</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-comprar-canivete">
+				<l>Canivete</l>
+				<r>$3.600</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-comprar-grifo">
+				<l>Chave de Grifo</l>
+				<r>$2.400</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-comprar-martelo">
+				<l>Martelo</l>
+				<r>$2.800</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-comprar-golf">
+				<l>Taco de Golf</l>
+				<r>$2.500</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-comprar-cabra">
+				<l>Pé de Cabra</l>
+				<r>$2.200</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-comprar-machado">
+				<l>Machado</l>
+				<r>$3.900</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-comprar-lanterna">
+				<l>Lanterna</l>
+				<r>$2.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-comprar-beisebol">
+				<l>Taco de Beisebol</l>
+				<r>$2.700</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-comprar-garrafa">
+				<l>Garrafa</l>
+				<r>$2.100</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-comprar-batalha">
+				<l>Machado de Batalha</l>
+				<r>$4.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-comprar-sinuca">
+				<l>Taco de Sinuca</l>
+				<r>$3.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-comprar-pedra">
+				<l>Machado de Pedra</l>
+				<r>$3.800</r>
+			</button>
+		</div>
+		<div data-parent="armamentos-branca" id="armamentos-branca-vender" style="display: none;">
+			<button class="menuoption" data-action="armamentos-vender-faca">
+				<l>Faca</l>
+				<r>$1.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-vender-adaga">
+				<l>Adaga</l>
+				<r>$1.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-vender-ingles">
+				<l>Soco-Inglês</l>
+				<r>$1.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-vender-machete">
+				<l>Machete</l>
+				<r>$1.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-vender-canivete">
+				<l>Canivete</l>
+				<r>$1.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-vender-grifo">
+				<l>Chave de Grifo</l>
+				<r>$1.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-vender-martelo">
+				<l>Martelo</l>
+				<r>$1.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-vender-golf">
+				<l>Taco de Golf</l>
+				<r>$1.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-vender-cabra">
+				<l>Pé de Cabra</l>
+				<r>$1.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-vender-machado">
+				<l>Machado</l>
+				<r>$1.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-vender-lanterna">
+				<l>Lanterna</l>
+				<r>$1.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-vender-beisebol">
+				<l>Taco de Beisebol</l>
+				<r>$1.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-vender-garrafa">
+				<l>Garrafa</l>
+				<r>$1.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-vender-batalha">
+				<l>Machado de Batalha</l>
+				<r>$1.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-vender-sinuca">
+				<l>Taco de Sinuca</l>
+				<r>$1.000</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-vender-pedra">
+				<l>Machado de Pedra</l>
+				<r>$1.500</r>
+			</button>
+		</div>
+
+		<div data-parent="mainmenu" id="municoes" style="display: none;">
+
+			<button class="menuoption" data-sub="municoes-comprar">Comprar</button>
+		</div>
+		<!--
+				<button class="menuoption" data-sub="municoes-vender">Vender</button>
+			</div>
+-->
+		<div data-parent="municoes" id="municoes-comprar" style="display: none;">
+
+			<!-- <button class="menuoption" data-action="municoes-comprar-m1922">
+				<l>M1922</l>
+				<r>$1.000</r>
+			</button>
+			<button class="menuoption" data-action="municoes-comprar-m1911">
+				<l>M1911</l>
+				<r>$1.250</r>
+			</button>
+			<button class="menuoption" data-action="municoes-comprar-fnfiveseven">
+				<l>FN Five Seven</l>
+				<r>$1.500</r>
+			</button> -->
+			<button class="menuoption" data-action="municoes-comprar-winchester22">
+				<l>Winchester 22</l>
+				<r>$5.000</r>
+			</button>
+
+
+			<!-- <button class="menuoption" data-action="municoes-comprar-sinalizador"><l>Sinalizador</l><r>$1.000</r></button> -->
+		</div>
+
+		<div data-parent="municoes" id="municoes-vender" style="display: none;">
+			<!-- <button class="menuoption" data-action="municoes-vender-m1922"><l>M1922</l><r>$500</r></button>
+				<button class="menuoption" data-action="municoes-vender-m1911"><l>M1911</l><r>$625</r></button>
+				<button class="menuoption" data-action="municoes-vender-fnfiveseven"><l>FN Five Seven</l><r>$750</r></button>
+				<button class="menuoption" data-action="municoes-vender-winchester22"><l>Winchester 22</l><r>$1.500</r></button> -->
+			<!-- <button class="menuoption" data-action="municoes-vender-sinalizador"><l>Sinalizador</l><r>$500</r></button> -->
+		</div>
+
+
+		<div data-parent="mainmenu" id="utilidades" style="display: none;">
+			<button class="menuoption" data-sub="utilidades-comprar">Comprar</button>
+			<button class="menuoption" data-sub="utilidades-vender">Vender</button>
+		</div>
+		<div data-parent="utilidades" id="utilidades-comprar" style="display: none;">
+			<button class="menuoption" data-action="utilidades-comprar-paraquedas">
+				<l>Paraquedas</l>
+				<r>$5.000</r>
+			</button>
+			<button class="menuoption" data-action="utilidades-comprar-lancador">
+				<l>Lançador de Fogos</l>
+				<r>$5.000</r>
+			</button>
+			<button class="menuoption" data-action="utilidades-comprar-mlancador">
+				<l>Fogos de artifício</l>
+				<r>$500</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-comprar-colete">
+				<l>Colete</l>
+				<r>$10.000</r>
+			</button>
+			<!-- <button class="menuoption" data-action="armamentos-comprar-sinalizador"><l>Sinalizador</l><r>$1.000</r></button> -->
+		</div>
+		<div data-parent="utilidades" id="utilidades-vender" style="display: none;">
+			<button class="menuoption" data-action="utilidades-vender-paraquedas">
+				<l>Paraquedas</l>
+				<r>$500</r>
+			</button>
+			<button class="menuoption" data-action="armamentos-vender-sinalizador">
+				<l>Sinalizador</l>
+				<r>$1.000</r>
+			</button>
+		</div>
+	</div>
+	<script src="ui.js" type="text/javascript"></script>
+</body>
+
+</html>

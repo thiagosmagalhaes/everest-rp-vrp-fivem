@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="atmtest.1.css"/>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body id="Test1">
+
+
+    <div id="ATMSection">
+      <div class="message">
+        Sistema de invasão do caixa eletrônico, no nivel 5 
+        você irá conseguir estourar o mesmo, caso perca as 2 
+        chances, a policia irá ser alertada.
+      </div>
+      <div class="screen">
+        <div class="content">
+		      <div id="app">
+            <canvas id="canvas" width="400px" height="400px"></canvas>
+
+          </div>
+
+          <div class="buttons left">
+            <div class="each-button"></div>
+            <div class="each-button"></div>
+            <div class="each-button"></div>
+          </div>
+          <div class="buttons right">
+            <div class="each-button"></div>
+            <div class="each-button"></div>
+            <div class="each-button"></div>
+          </div>
+        </div>
+      </div>
+         <div class="buttons-main">
+          <div class="cancel"></div>
+          <div class="confirm"></div>
+      </div>
+    </div>
+
+
+    <script>
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        var t = text();
+        var logo = document.getElementById('logo');
+        var lines = [];
+        window.setInterval(draw, 30);
+
+        function draw() {
+          if (Math.floor(Math.random() * 2) === 0 && lines.length < 100) {
+            lines.push(new textLine());
+          }
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          lines.forEach(function(tl) {
+
+            //ctx.drawImage(tl.text, tl.posX, tl.animate(), 20, 1000);
+          });
+          //ctx.drawImage(logo, 100, 155, 400, 70);
+
+        }
+
+        function textLine() {
+          this.text = t;
+          this.posX = (function() {
+            return Math.floor(Math.random() * canvas.width);
+          })();
+          this.offsetY = -1000;
+          this.animate = function() {
+            if (this.offsetY >= 0) {
+              this.offsetY = -1000;
+            }
+            this.offsetY += 10;
+            return this.offsetY;
+          };
+        }
+
+        function text() {
+          var offscreenCanvas = document.createElement('canvas');
+          offscreenCanvas.width = "30";
+          offscreenCanvas.height = "1000";
+          offscreenCanvas.style.display = "none";
+          document.body.appendChild(offscreenCanvas);
+          var octx = offscreenCanvas.getContext('2d');
+          octx.textAlign = "center";
+          octx.shadowColor = "lightgreen";
+          octx.shadowOffsetX = 2;
+          octx.shadowOffsetY = -5;
+          octx.shadowBlur = 1;
+          octx.fillStyle = 'darkgreen';
+          octx.textAlign = "left";
+          var step = 10;
+          for (i = 0; i < 100; i++) {
+            var charCode = 0;
+            while (charCode < 60) {
+              charCode = Math.floor(Math.random() * 100);
+            }
+            octx.fillText(String.fromCharCode(charCode), 0, step);
+            step += 10;
+          }
+      return offscreenCanvas;
+    }
+  </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js'></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+
+  </body>
+
+</html>

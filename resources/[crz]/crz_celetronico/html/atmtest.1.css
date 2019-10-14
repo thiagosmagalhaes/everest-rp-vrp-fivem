@@ -1,0 +1,166 @@
+body {
+  background: transparent !important;
+}
+#Container {
+  border-radius: 2px;
+  background-color: #1565c0;
+  padding: 30px 20px;
+  margin: 0 auto;
+  width: 900px;
+  margin-top: 10px;
+}
+
+#ATMSection { 
+  display: none;
+  width: 800px;
+  background-color: #e3e3e3;
+  margin: 10px auto;
+  padding: 20px 10px;
+  box-shadow: 0px 0px 1px rgba(0,0,0,.08);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  height: 745px;
+}
+
+#ATMSection:before,
+#ATMSection:after {
+  content: " ";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+}
+
+#ATMSection:before {
+  background-color: #1a237e;
+  top: -195%;
+  left: -100%;
+  transform: rotate(-2deg);
+  z-index: 1;
+}
+#ATMSection:after {
+  background-color: #1565c0;
+  top: -194%;
+  left: -100%;
+  transform: rotate(-2.4deg);
+  z-index: 0;
+}
+
+#ATMSection .message {
+    width: 65%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+    color: #3c3c3c;
+    padding: 20px;
+    border-top: 2px dashed #1a237e;
+    border-bottom: 2px dashed #1a237e;
+}
+
+#ATMSection .screen {
+  width: 70%;
+  min-height: 400px;
+  margin: 20px auto;
+  position: relative;
+  padding-bottom: 20px;
+  border-radius:5px;
+}
+
+#ATMSection .screen .content {
+    padding: 10px 30px 20px 30px;
+    margin-top: 40px;
+    background-color: #3c3c3c;
+    border-radius: 5px;
+    position:relative;
+}
+
+#ATMSection .screen .title {
+  width: 100%;
+  background-color: #3c3c3c;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#ATMSection .buttons .each-button{
+ width: 70px;
+  height: 70px;
+  background-color: #d0d0d0;
+  position: absolute;
+  bottom: 5px;
+  border-radius: 5px;
+}
+
+
+#ATMSection .buttons.left .each-button{
+  left: -100px;
+}
+
+#ATMSection .buttons.right .each-button{
+  right: -100px;
+}
+
+#ATMSection .buttons .each-button:nth-child(2) {
+  bottom: 150px;
+}
+
+#ATMSection .buttons .each-button:nth-child(3) {
+  bottom: 300px;
+}
+
+/* #ATMSection .buttons-main .numpad {
+  margin: 0 auto;
+  width: 50%;
+  display: inline;
+}
+#ATMSection .buttons-main .numpad .col {
+  float:left;
+  width: 10%;
+  margin-right: 15x;  
+}
+
+#ATMSection .buttons-main .numpad .number {
+  background-color:white;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+} */
+#ATMSection .buttons-main  {
+  text-align: center;
+}
+
+#ATMSection .buttons-main .confirm {
+  background-color: #35c735;
+  width: 150px;
+  height: 40px;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 auto;
+  opacity: .5;
+}
+
+#ATMSection .buttons-main .cancel {
+  background-color: #f72020;
+  width: 150px;
+  height: 40px;
+  border-radius: 3px;
+  margin: 0 auto;
+  display: inline-block;
+  opacity: .5;
+}
+
+.clear {
+  clear:both;
+}
+
+
+
+#ATMSection .app__send {
+  margin-left: 10px;
+  border-color: lime;
+  color: lime;
+}

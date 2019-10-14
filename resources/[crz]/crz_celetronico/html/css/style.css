@@ -1,0 +1,99 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Fira Mono', monospace;
+	font-size: 16px;
+	background: rgba(33, 46, 59, 1);
+	color: rgba(250,250,255,1);
+}
+
+pre {
+	text-align: center;
+	color: rgba(74, 147, 170, 1);
+}
+
+.content {
+	max-width: 500px;
+	margin: 20px auto;
+}
+
+.app__input, .app__end {
+	text-align: center;
+}
+
+.app__end {
+	margin-top: 40px;
+}
+
+input {
+	outline: none;
+	border: none;
+	margin: 0 0 20px 3px;
+	padding: 8px 5px 0px 0;
+	background: transparent;
+	color: rgba(250,250,255,1);
+	font-size: 20px;
+	border-bottom: 1px dotted rgba(91,114,127,1);
+}
+
+button {
+	background: transparent;
+	border: 1px dashed rgba(250,250,255,1);
+	outline: none;
+	cursor: pointer;
+	color: rgba(250,250,255,1);
+	padding: 8px 30px 9px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.app__gen-number {
+	text-align: center;
+}
+
+.app__divider {
+	color: rgba(91,114,127,1);
+	margin: 20px 0;
+}
+
+.app__number {
+	font-size: 36px;
+	color: rgba(244, 89, 87, 1);
+}
+
+.app__info:before,
+.app__info:after {
+	content: ' ';
+	display: table;
+}
+
+.app__info:after {
+	clear: both;
+}
+
+.app__info {
+	margin: 20px 0;
+}
+
+.app__level {
+	float: left;
+	color: rgba(244, 192, 37, 1);
+}
+
+.app__wrong {
+	float: right;
+	color: rgba(244, 89, 87, 1);
+}
+
+.app__author {
+	font-family: Helvetica, Arial;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	color: rgba(33, 150, 243, 1);
+	text-decoration: none;
+}

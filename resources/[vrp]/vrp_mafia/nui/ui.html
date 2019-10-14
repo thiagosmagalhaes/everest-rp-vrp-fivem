@@ -1,0 +1,152 @@
+<html>
+
+<head>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<link href="ui.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="actionmenu">
+		<div id="mainmenu">
+			<button class="menuoption" id="armamentos" data-sub="armamentos-comprar">Armamentos</button>
+			<button class="menuoption" id="municoes" data-sub="municoes-comprar">Munições</button>
+			<button class="menuoption" id="utilidades" data-sub="utilidades-comprar">Utilidades</button>
+			<button class="menuoption" data-action="fechar">Fechar</button>
+		</div>
+
+		<div data-parent="mainmenu" id="armamentos-comprar" style="display: none;">
+			<button class="menuoption" data-action="wbody|WEAPON_PISTOL_MK2">
+				<l>FN Five Seven</l>
+				<r>
+					40x Minério de Ferro<br>
+					5x Tora<br>
+				</r>
+			</button>
+			<button class="menuoption" data-action="wbody|WEAPON_ASSAULTSMG">
+				<l>MTAR-21</l>
+				<r>
+					85x Minério de Ferro<br>
+					25x Tora<br>
+				</r>
+			</button>
+			<button class="menuoption" data-action="wbody|WEAPON_ASSAULTRIFLE">
+				<l>AK-47</l>
+				<r>
+					80x Minério de Ferro<br>
+					50x Tora<br>
+				</r>
+			</button>
+			<button class="menuoption" data-action="wbody|WEAPON_GUSENBERG">
+				<l>Tommy Gun</l>
+				<r>
+					100x Minério de Ferro<br>
+					25x Tora<br>
+				</r>
+			</button>
+			<button class="menuoption" data-action="wbody|WEAPON_COMPACTRIFLE">
+				<l>Fuzil Compacto</l>
+				<r>
+					100x Minério de Ferro<br>
+					50x Tora<br>
+				</r>
+			</button>
+
+			<button class="menuoption" data-action="wbody|WEAPON_MOLOTOV">
+				<l>5x Molotov</l>
+				<r>
+					10x Minério de Ferro<br>
+					15x Nitrato de Potássio<br>
+				</r>
+			</button>
+
+		</div>
+
+		<div data-parent="mainmenu" id="municoes-comprar" style="display: none;">
+			<button class="menuoption" data-action="wammo|WEAPON_PISTOL_MK2">
+				<l>15x FN Five Seven</l>
+				<r>
+					6x Minério de Ferro<br>
+					15x Nitrato de Potássio<br>
+				</r>
+			</button>
+
+			<button class="menuoption" data-action="wammo|WEAPON_ASSAULTSMG">
+				<l>50x MTAR-21</l>
+				<r>
+					25x Minério de Ferro<br>
+					50x Nitrato de Potássio<br>
+				</r>
+			</button>
+
+			<button class="menuoption" data-action="wammo|WEAPON_ASSAULTRIFLE">
+				<l>50x AK-47</l>
+				<r>
+					30x Minério de Ferro<br>
+					50x Nitrato de Potássio<br>
+				</r>
+			</button>
+
+			<button class="menuoption" data-action="wammo|WEAPON_GUSENBERG">
+				<l>50x Tommy Gun</l>
+				<r>
+					25x Minério de Ferro<br>
+					50x Nitrato de Potássio<br>
+				</r>
+			</button>
+
+			<button class="menuoption" data-action="wammo|WEAPON_COMPACTRIFLE">
+				<l>50x Fuzil Compacto</l>
+				<r>
+					25x Minério de Ferro<br>
+					50x Nitrato de Potássio<br>
+				</r>
+			</button>
+			<!--
+				<button class="menuoption" data-action="municoes-comprar-m1922"><l>M1922</l><r>$1.000</r></button>
+				<button class="menuoption" data-action="municoes-comprar-m1911"><l>M1911</l><r>$1.250</r></button>
+-->
+
+			<!--
+				<button class="menuoption" data-action="municoes-comprar-uzi"><l>Uzi</l><r>$1.000</r></button>
+-->
+
+			<!--
+				<button class="menuoption" data-action="municoes-comprar-ak103"><l>AK-103</l><r>$1.200</r></button>
+
+				<button class="menuoption" data-action="municoes-comprar-magnum44"><l>Magnum 44</l><r>$1.200</r></button>
+
+				<button class="menuoption" data-action="municoes-comprar-thompson"><l>Thompson</l><r>$1.200</r></button>
+-->
+		</div>
+
+		<div data-parent="mainmenu" id="utilidades-comprar" style="display: none;">
+			<button class="menuoption" data-action="algemas">
+				<l>Algemas</l>
+				<r>$1.500</r>
+			</button>
+			<button class="menuoption" data-action="capuz">
+				<l>Capuz</l>
+				<r>$850</r>
+			</button>
+			<button class="menuoption" data-action="lockpick">
+				<l>Lockpick</l>
+				<r>$2.000</r>
+			</button>
+			<button class="menuoption" data-action="masterpick">
+				<l>Masterpick</l>
+				<r>$15.000</r>
+			</button>
+			<!-- <button class="menuoption" data-action="pendrive">
+				<l>Pendrive</l>
+				<r>$20.000</r>
+			</button> -->
+			<!-- <button class="menuoption" data-action="colete">
+				<l>Colete</l>
+				<r>$10.000</r>
+			</button> -->
+		</div>
+	</div>
+	<script src="ui.js" type="text/javascript"></script>
+</body>
+
+</html>

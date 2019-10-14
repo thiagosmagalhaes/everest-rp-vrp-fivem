@@ -1,0 +1,55 @@
+html {
+	overflow-x: hidden !important;
+	overflow-y: hidden !important;
+	background-color: transparent !important;
+}
+
+body {
+	background-color: transparent !important;
+}
+
+#notifications {
+	top: 3%;
+	left: 65%;
+	color: rgba(255,255,255,0.7);
+	max-width: 550px;
+	font-size: 12px;
+	position: absolute !important;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+#notifications b {
+	color: rgba(255,255,255,1);
+}
+
+#sucesso {
+	float: left;
+	padding: 7px 10px;
+	border-radius: 4px;
+ 	margin: 0 0 10px 10px;
+	background-color: rgba(69,127,0,0.8);
+}
+
+#negado {
+	float: left;
+	padding: 7px 10px;
+	border-radius: 4px;
+ 	margin: 0 0 10px 10px;
+	background-color: rgba(200,50,50,0.8);
+}
+
+#aviso {
+	float: left;
+	padding: 7px 10px;
+	border-radius: 4px;
+ 	margin: 0 0 10px 10px;
+	background-color: rgba(205,164,0,0.8);
+}
+
+#importante {
+	float: left;
+	padding: 7px 10px;
+	border-radius: 4px;
+ 	margin: 0 0 10px 10px;
+	background-color: rgba(0,121,205,0.8);
+}
