@@ -3,7 +3,8 @@ Everest RP foi um servidor criado por mim com cenário americano, explorando o m
 
 Baixe os arquivos, crie o banco de dados e importe o sql https://github.com/kitoide/everest-rp-vrp-fivem/blob/master/resources/base.sql para a base de dados
 
-Este repositório não tem a base completa, você pode obter a base completa, por R$ 500,00, realizando o pagamento via PicPay! [[http://picpay.me/thiagosm](http://picpay.me/thiagosm)] no próprio pagamento vc pode comentar me passando seu discord para que a base completa seja enviada
+Vou postar em breve um vídeo mostrando tudo que vem na base!
+Esta é uma base demo, você pode obter a base completa por R$ 500,00, realizando o pagamento via PicPay! [[http://picpay.me/thiagosm](http://picpay.me/thiagosm)] no próprio pagamento vc pode comentar me passando seu discord para que a base completa seja enviada
 
 Versão completa incluí:
 ![Mochila](https://http2.mlstatic.com/base-everest-rp-fivem-vrp-D_NQ_NP_646787-MLB32318897670_092019-F.webp)
