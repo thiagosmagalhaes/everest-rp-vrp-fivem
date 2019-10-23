@@ -17,6 +17,15 @@ Versão completa incluí:
 - Sistema de rádio interno exclusivo (Usa TokoVoid)
 - Banco fleeca
 - Script exclusívos que desenvolvi pra base
-[https://www.youtube.com/watch?v=9iLEiOzHdZ0](https://www.youtube.com/watch?v=9iLEiOzHdZ0&t=3s "https://www.youtube.com/watch?v=9iLEiOzHdZ0")
+[https://www.youtube.com/watch?v=9iLEiOzHdZ0](https://www.youtube.com/watch?v=9iLEiOzHdZ0 "https://www.youtube.com/watch?v=9iLEiOzHdZ0")
+
+Vídeos relacionados a base:
+[https://www.youtube.com/watch?v=9iLEiOzHdZ0](https://www.youtube.com/watch?v=9iLEiOzHdZ0 "https://www.youtube.com/watch?v=9iLEiOzHdZ0")
+
+[https://www.youtube.com/watch?v=QAYVqfhMW40](https://www.youtube.com/watch?v=QAYVqfhMW40 "https://www.youtube.com/watch?v=QAYVqfhMW40")
+
+[https://www.youtube.com/watch?v=PRbFzc0sk-I](https://www.youtube.com/watch?v=PRbFzc0sk-I "https://www.youtube.com/watch?v=PRbFzc0sk-I")
+
+[https://www.youtube.com/watch?v=_DV_fABuCzc](https://www.youtube.com/watch?v=_DV_fABuCzc "https://www.youtube.com/watch?v=_DV_fABuCzc")
 
 Precisa criar algum script? Entre em contato no discord kitoide#9863
